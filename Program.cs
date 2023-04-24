@@ -1,13 +1,17 @@
-﻿List<cliente> datosCliente = new List<cliente>();
+﻿
+Dictionary<int, cliente> IDcliente = new Dictionary<int, cliente>();
 int op = ingresarInt("1. Nueva Inscripcion\n2. Obtener Estadisticas del Evento\n3. Buscar Cliente\n4. Cambiar Entrada de un Cliente\n5. Salir");
-int ID = 0;
 while (op != 4)
 {
     switch (op)
     {
         case 1:
-            cargarCliente(ID);
+            cliente person = cargarCliente();
+            int id = tiquetera.devolverUltimoId();
+            IDcliente.Add(id, person);
+
             break;
+            obterEstadisticas();
         case 2:
 
             break;
@@ -18,7 +22,7 @@ while (op != 4)
 
             break;
     }
-    op = ingresarInt("1. Cargar Datos Boxeador 1.\n2. Cargar Datos Boxeador 2.\n3. Pelar.\n4. Salir");
+    op = ingresarInt("1. Nueva Inscripcion\n2. Obtener Estadisticas del Evento\n3. Buscar Cliente\n4. Cambiar Entrada de un Cliente\n5. Salir");
 }
 
 static int ingresarInt(string txt)
@@ -45,52 +49,62 @@ static string ingresarString(string txt)
     return palabra;
 }
 
-static cliente cargarCliente(int ID)
+static cliente cargarCliente()
 {
-    int dni = ingresarInt("Ingrese su DNI");
+    string dni = ingresarString("Ingrese su DNI");
     string apellido = ingresarString("Ingrese su Apellido:");
     string nombre = ingresarString("Ingrese su Nombre:");
-    DateTime fechaInscripcion = DateTime.Today;
     int tipoEntrada = ingresarInt("Ingrese el tipo de entrada:\nOpcion 1 - Día 1 , valor a abonar $15000\nOpción 2 - Día 2, valor a abonar $30000\nOpción 3 - Día 3, valor a abonar $10000\nOpción 4 - Full Pass, valor a abonar $40000");
     double valorAbonado = ingresarDouble("Ingrese el dinero que va a abonar:");
     verificarAbono(tipoEntrada, valorAbonado);
-    ID = ID++;
+    cliente cli = new cliente(dni, apellido, nombre, tipoEntrada, valorAbonado);
 
-    
+    return cli;
 }
 
 static double verificarAbono(int tipoEntrada, double valorAbono)
 {
     string msjError = "El valor abonado es menor de lo necesitado. Vuelva a Ingresar:";
-    int op1 = 15000;
-    int op2 = 30000;
-    int op3 = 10000;
-    int op4 = 40000;
 
     if (tipoEntrada == 1)
     {
-        while(valorAbono < 15000){
+        while (valorAbono > 15000)
+        {
             valorAbono = ingresarDouble(msjError);
         }
     }
     else if (tipoEntrada == 2)
     {
-        while(valorAbono < 30000){
+        while (valorAbono > 30000)
+        {
             valorAbono = ingresarDouble(msjError);
         }
     }
     else if (tipoEntrada == 3)
     {
-        while(valorAbono < 10000){
+        while (valorAbono > 10000)
+        {
             valorAbono = ingresarDouble(msjError);
         }
     }
     else
     {
-        while(valorAbono < 40000){
+        while (valorAbono > 40000)
+        {
             valorAbono = ingresarDouble(msjError);
         }
     }
 
     return valorAbono;
+}
+
+static void obterEstadisticas(Dictionary<int, cliente> IDcliente)
+{
+    int cantClientes = 0, entrada1, entrada2, entrada3, entrada4, recaudacion = 0;
+    foreach (int id in IDcliente.Keys)
+    {
+        cantClientes++;
+        
+    }
+
 }
