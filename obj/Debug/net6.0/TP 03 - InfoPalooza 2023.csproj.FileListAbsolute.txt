@@ -1,0 +1,15 @@
+Z:\TP 03 - InfoPalooza 2023\bin\Debug\net6.0\TP 03 - InfoPalooza 2023.exe
+Z:\TP 03 - InfoPalooza 2023\bin\Debug\net6.0\TP 03 - InfoPalooza 2023.deps.json
+Z:\TP 03 - InfoPalooza 2023\bin\Debug\net6.0\TP 03 - InfoPalooza 2023.runtimeconfig.json
+Z:\TP 03 - InfoPalooza 2023\bin\Debug\net6.0\TP 03 - InfoPalooza 2023.dll
+Z:\TP 03 - InfoPalooza 2023\bin\Debug\net6.0\TP 03 - InfoPalooza 2023.pdb
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.csproj.AssemblyReference.cache
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.GeneratedMSBuildEditorConfig.editorconfig
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.AssemblyInfoInputs.cache
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.AssemblyInfo.cs
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.csproj.CoreCompileInputs.cache
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.dll
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\refint\TP 03 - InfoPalooza 2023.dll
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.pdb
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\TP 03 - InfoPalooza 2023.genruntimeconfig.cache
+Z:\TP 03 - InfoPalooza 2023\obj\Debug\net6.0\ref\TP 03 - InfoPalooza 2023.dll
